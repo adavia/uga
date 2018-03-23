@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "A blog app created using GraphQL and React",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node dist/index.js",
+    "build": "babel src -d dist",
+    "start": "nodemon --exec babel-node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "apollo-server-express": "^1.2.0",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dataloader": "^1.3.0",
+    "express": "^4.16.2",
+    "formidable": "^1.1.1",
+    "graphql": "^0.11.7",
+    "graphql-subscriptions": "^0.5.4",
+    "graphql-tools": "^2.7.2",
+    "jwt-simple": "^0.5.1",
+    "lodash": "^4.17.4",
+    "merge-graphql-schemas": "^1.3.0",
+    "mysql2": "^1.5.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.22.6",
+    "subscriptions-transport-ws": "^0.9.1"
+  }
+}

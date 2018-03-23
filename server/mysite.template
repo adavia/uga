@@ -1,0 +1,15 @@
+server {
+  client_max_body_size 20m;
+  
+  location /files {
+    alias /files/;
+    client_max_body_size 20m;
+    gzip_static on;
+    expires max;
+    add_header Cache-Control private;
+  }
+
+  location /graphql {
+    proxy_pass http://web:8081;
+  }
+}
